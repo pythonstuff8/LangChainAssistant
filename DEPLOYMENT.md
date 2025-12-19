@@ -29,12 +29,12 @@ Render has no strict size limits, making it perfect for Python RAG apps.
 
 1.  **Import to Vercel**:
     *   Go to [Vercel](https://vercel.com) and click "Add New... Project".
-    *   Select the same GitHub repository.
+    *   Select the `LangChainAssistant` repository.
 2.  **Configure**:
     *   **Framework Preset**: Next.js
     *   **Root Directory**: `./` (default)
 3.  **Environment Variables**:
-    *   `NEXT_PUBLIC_API_URL`: **Paste your Render URL here** (e.g., `https://langchain-assistant-api.onrender.com`).
+    *   `NEXT_PUBLIC_API_URL`: `https://langchainassistant-backend-production.up.railway.app`
 4.  **Deploy**: Click "Deploy".
 
 ---
