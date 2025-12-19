@@ -1,0 +1,16 @@
+# Exclude node_modules and frontend build artifacts from Python functions
+node_modules/
+.next/
+frontend/
+.git/
+.vscode/
+.idea/
+*.pyc
+__pycache__/
+backend/__pycache__/
+backend/data/
+
+# These are for the frontend, but Vercel handles Next.js separately.
+# However, explicit exclusion helps the Python builder.
+public/
+src/
