@@ -18,7 +18,7 @@ This guide describes how to deploy the combined LangChain Assistant (Frontend + 
 
 4.  **Environment Variables**
     *   Add the following environment variables in the Vercel dashboard:
-        *   `OPENAI_API_KEY`: Your OpenAI API key (sk-...).
+        *   ` `: Your OpenAI API key (sk-...).
 
 5.  **Deploy**
     *   Click "Deploy".
