@@ -1,0 +1,22 @@
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-dotenv==1.0.0
+pydantic-settings==2.1.0
+
+# LangChain ecosystem
+langchain==0.1.0
+langchain-openai==0.0.2
+langchain-community==0.0.10
+
+# Vector store
+chromadb==0.4.22
+
+# Document processing
+beautifulsoup4==4.12.2
+requests==2.31.0
+html2text==2024.2.26
+
+# Async support
+httpx==0.25.2
+aiohttp==3.9.1

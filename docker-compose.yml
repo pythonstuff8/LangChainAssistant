@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: langchain-backend
+    ports:
+      - "3005:3005"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - CHROMA_PERSIST_DIRECTORY=/app/data/chroma_db
+    volumes:
+      - ./backend/data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: langchain-frontend
+    ports:
+      - "3006:3006"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:3005
+    depends_on:
+      - backend
+    restart: unless-stopped
