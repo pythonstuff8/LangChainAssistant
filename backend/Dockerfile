@@ -16,4 +16,5 @@ COPY . .
 EXPOSE 3005
 
 # Run the application
-CMD ["python", "main.py"]
+# We use uvicorn directly to better handle signals and respect the $PORT variable
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-3005}"]
