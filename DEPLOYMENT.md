@@ -18,7 +18,11 @@ This guide describes how to deploy the combined LangChain Assistant (Frontend + 
 
 4.  **Environment Variables**
     *   Add the following environment variables in the Vercel dashboard:
-        *   ` `: Your OpenAI API key (sk-...).
+        *   `OPENAI_API_KEY`: **(Required)** Your OpenAI API key (starts with `sk-`).
+        *   `OPENAI_CHAT_MODEL`: *Optional* (defaults to `gpt-4o-mini`).
+        *   `OPENAI_EMBEDDING_MODEL`: *Optional* (defaults to `text-embedding-3-small`).
+        *   `CHROMA_PERSIST_DIRECTORY`: *Optional* (defaults to `./data/chroma_db`).
+        *   `NEXT_PUBLIC_API_URL`: *Optional* (defaults to your Vercel deployment URL). Only set this if you want to point to a different backend.
 
 5.  **Deploy**
     *   Click "Deploy".
