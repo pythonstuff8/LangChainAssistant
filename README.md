@@ -183,3 +183,4 @@ The generic "GPU" requirement for AI apps usually applies when running local LLM
 ## License
 
 MIT
+# LangChainAssistant-Frontend
